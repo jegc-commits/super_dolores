@@ -177,29 +177,127 @@ La prueba `Lealtad: 1 punto por cada $10 en compras y viajes` esperaba `5 + 8 = 
 
 Es decir, **la prueba contradecía la especificación**, no el código. Se documentó el caso, se ajustó la expectativa a `5 + 8 + 50` con un comentario explicativo y las 104 pruebas quedaron en verde. Este es exactamente el tipo de ambigüedad que TDD saca a la luz: primero se aclara la regla, luego se escribe la prueba.
 
-### 5.5 Recorrido manual de la interfaz (pruebas de aceptación)
+## 6. Capturas del recorrido (pruebas de aceptación)
 
-Capturas en [`docs/capturas/`](docs/capturas). Capturas a 800 × 655 px sobre el build web. Algunos emojis se ven como recuadros porque el navegador usado para las capturas no tenía la fuente de emojis instalada; no afecta a la funcionalidad ni a las pruebas.
+Capturas tomadas sobre el build web a 800 × 655 px. Algunos emojis se ven como recuadros porque el navegador usado no tenía la fuente de emojis instalada; no afecta a la funcionalidad ni a las pruebas.
 
-| # | Captura | Qué demuestra |
-|---|---|---|
-| 01 | `01_inicio_ana.jpg` | Inicio con identidad única, saldo, puntos, nivel, racha y sugerencia "Para ti". |
-| 02 | `02_monedero_envio.jpg` | Envío de $100 de Ana a Luis: saldo $1,000 → $900, mensaje ✅ y movimiento en el libro. |
-| 03–04 | `03_tienda_negocios.jpg`, `04_tienda_productos.jpg` | Catálogo de negocios y productos con precio y existencias. |
-| 05–06 | `05_carrito.jpg`, `06_pedido_confirmado.jpg` | Carrito por $91.00, pedido `ped-5`, saldo $809.00 y existencias descontadas. |
-| 07–11 | `07_viajes_inicio.jpg` … `11_viaje_finalizado.jpg` | Máquina de estados completa: estimación 2.7 km/$57.20 → solicitado → aceptado → en curso → finalizado con cobro de $57.20 (saldo $751.80). |
-| 12–14 | `12_chat_ana_con_luis.jpg`, `13_chat_mensaje_y_envio.jpg`, `14_chat_luis_recibido.jpg` | Chat con mensaje de texto y dos envíos de dinero; Luis (la otra punta) ve lo mismo y el contador de no leídos se limpia. |
-| 15–16 | `15_inicio_luis.jpg`, `16_inicio_ana_tras_operaciones.jpg` | Cambio de persona: Luis recibe $150 (badge de 3 no leídos); Ana acumula 364 puntos y cambia su sugerencia. |
-| 17–18 | `17_tablero_retencion.jpg`, `18_tablero_retencion_detalle.jpg` | Tablero con DAU 52, WAU 169, MAU 200, stickiness 26.0 %, D1 41.5 %, D7 40.4 %, multiservicio 65.5 % y la advertencia de datos **simulados** + la nota de correlación ≠ causalidad. |
-| 19–21 | `19_horoscopo_saldo.jpg`, `20_horoscopo_cobro.jpg`, `21_horoscopo_mensajes.jpg` | Permisos en acción: el tercero es bloqueado al intentar leer saldo (`monederoLeer`), cobrar (`monederoPagar`) y leer chats (`mensajesLeer`). |
-| 22 | `22_kill_switch_apagado.jpg` | Kill switch: Viajes desaparece de la barra y de los chips de servicios; aparece "Volver a encender Viajes". |
-| 23 | `23_canje_puntos.jpg` | Canje de lealtad: 364 → 64 puntos y saldo $701.80 → $731.80 con aviso "Canjeaste $30.00". |
+### Prueba 1 · Inicio con identidad única
+
+Inicio de Ana: saldo de $1,000, 0 puntos, nivel Bronce, racha 0 y sugerencia "Para ti".
+
+![Inicio de Ana](docs/capturas/01_inicio_ana.jpg)
+
+### Prueba 2 · Envío de dinero desde el Monedero
+
+Ana envía $100 a Luis: el saldo baja de $1,000 a $900, aparece "Dinero enviado" y el movimiento queda registrado en el libro.
+
+![Envío de dinero desde el Monedero](docs/capturas/02_monedero_envio.jpg)
+
+### Prueba 3 · Compra en la Tienda
+
+Catálogo de negocios de Dolores Hidalgo.
+
+![Negocios de Dolores](docs/capturas/03_tienda_negocios.jpg)
+
+Productos con precio y existencias disponibles.
+
+![Productos de la tortillería](docs/capturas/04_tienda_productos.jpg)
+
+Carrito con 2 kg de tortillas y 1 paquete de tostadas: total $91.00.
+
+![Carrito con total de $91.00](docs/capturas/05_carrito.jpg)
+
+Pedido `ped-5` confirmado: inventario descontado y saldo en $809.00.
+
+![Pedido confirmado por $91.00](docs/capturas/06_pedido_confirmado.jpg)
+
+### Prueba 4 · Viaje completo (máquina de estados)
+
+Estimación del trayecto Jardín Principal → UTNG: 2.7 km por $57.20.
+
+![Estimación del viaje](docs/capturas/07_viajes_inicio.jpg)
+
+Estado `solicitado`, con la simulación del conductor y la opción de cancelar.
+
+![Viaje solicitado](docs/capturas/08_viaje_solicitado.jpg)
+
+Estado `aceptado`.
+
+![Viaje aceptado](docs/capturas/09_viaje_aceptado.jpg)
+
+Estado `enCurso`, listo para llegar y pagar.
+
+![Viaje en curso](docs/capturas/10_viaje_en_curso.jpg)
+
+Estado `finalizado` con cobro de $57.20 y saldo en $751.80.
+
+![Viaje finalizado y cobrado](docs/capturas/11_viaje_finalizado.jpg)
+
+### Prueba 5 · Chat y dinero dentro del chat
+
+Conversación de Ana con Luis, con el envío de $100 ya reflejado como mensaje.
+
+![Chat de Ana con Luis](docs/capturas/12_chat_ana_con_luis.jpg)
+
+Mensaje de texto y envío de $50 sin salir de la conversación.
+
+![Mensaje y envío de $50 en el chat](docs/capturas/13_chat_mensaje_y_envio.jpg)
+
+La otra punta: Luis ve los mismos mensajes y ya no tiene mensajes sin leer.
+
+![Chat visto por Luis](docs/capturas/14_chat_luis_recibido.jpg)
+
+### Prueba 6 · Cambio de persona (dos puntas)
+
+Luis recibe los $150 de Ana y muestra el badge de 3 no leídos.
+
+![Inicio de Luis](docs/capturas/15_inicio_luis.jpg)
+
+Ana, tras sus operaciones: 364 puntos, racha de 1 día y sugerencia actualizada.
+
+![Inicio de Ana tras las operaciones](docs/capturas/16_inicio_ana_tras_operaciones.jpg)
+
+### Prueba 7 · Tablero de retención
+
+DAU 52, WAU 169, MAU 200, stickiness 26.0 %, D1 41.5 %, D7 40.4 % y 65.5 % de usuarios multiservicio, con la advertencia de datos simulados.
+
+![Tablero de retención](docs/capturas/17_tablero_retencion.jpg)
+
+Detalle de la comparación por servicios y la nota de que correlación no implica causalidad.
+
+![Detalle del tablero de retención](docs/capturas/18_tablero_retencion_detalle.jpg)
+
+### Prueba 8 · Permisos de la mini-app de un tercero
+
+El Horóscopo intenta leer el saldo y es bloqueado por falta del permiso `monederoLeer`.
+
+![Bloqueo al leer el saldo](docs/capturas/19_horoscopo_saldo.jpg)
+
+Intenta cobrar y es bloqueado por falta del permiso `monederoPagar`.
+
+![Bloqueo al intentar cobrar](docs/capturas/20_horoscopo_cobro.jpg)
+
+Intenta leer los chats y es bloqueado por falta del permiso `mensajesLeer`.
+
+![Bloqueo al leer los chats](docs/capturas/21_horoscopo_mensajes.jpg)
+
+### Prueba 9 · Kill switch de Viajes
+
+Viajes desaparece de la barra y de los chips de servicios; queda la opción de volver a encenderlo.
+
+![Kill switch con Viajes apagado](docs/capturas/22_kill_switch_apagado.jpg)
+
+### Prueba 10 · Canje de puntos de lealtad
+
+Canje de 300 puntos: 364 → 64 puntos y saldo de $701.80 a $731.80, con el aviso "Canjeaste $30.00".
+
+![Canje de puntos](docs/capturas/23_canje_puntos.jpg)
 
 **Invariantes observados en el recorrido:** cada operación dejó rastro en el libro de movimientos; el saldo siempre fue la suma de esos movimientos; el dinero enviado apareció en la cuenta del destinatario; la compra descontó inventario; el viaje cobró al finalizar y no antes.
 
 ---
 
-## 6. Lista de verificación del manual
+## 7. Lista de verificación del manual
 
 - [x] `flutter test` pasa en verde (cuatro archivos de pruebas, 104 casos).
 - [x] Mandar dinero en el chat cambia ambos saldos, deja un mensaje y avisa al destinatario.
@@ -211,7 +309,7 @@ Capturas en [`docs/capturas/`](docs/capturas). Capturas a 800 × 655 px sobre el
 
 ---
 
-## 7. Hallazgos técnicos y decisiones
+## 8. Hallazgos técnicos y decisiones
 
 - **Dinero en enteros.** `$1,250.00` se guarda como `125000` centavos; los porcentajes se redondean con `(centavos × pct + 50) ~/ 100`.
 - **Semana lunes–domingo** calculada con `DateTime(año, mes, día - desplazamiento)` para que el cambio de horario no mueva eventos de día.
@@ -222,7 +320,7 @@ Capturas en [`docs/capturas/`](docs/capturas). Capturas a 800 × 655 px sobre el
 
 ---
 
-## 8. Limitaciones (explícitas en el manual)
+## 9. Limitaciones (explícitas en el manual)
 
 - No hay servidor real ni base de datos: todo vive en memoria y se pierde al cerrar.
 - No hay inicio de sesión real (se cambia de persona con un botón de demostración).
@@ -234,7 +332,7 @@ Operar pagos, transporte y mensajería con usuarios reales exige licencias, segu
 
 ---
 
-## 9. Evidencias incluidas
+## 10. Evidencias incluidas
 
 ```
 docs/
@@ -250,7 +348,7 @@ docs/
 
 ---
 
-## 10. Créditos
+## 11. Créditos
 
 Actividad basada en el *Manual paso a paso con TDD — Super Dolores: una SuperApp completa*, de Anastacio Rodríguez García (Desarrollo Móvil Integral, UTNG). El código de dominio, pruebas y pantallas sigue el manual; se documentan aquí las correcciones y verificaciones realizadas durante la actividad.
 
