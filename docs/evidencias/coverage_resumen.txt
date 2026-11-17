@@ -1,0 +1,24 @@
+Cobertura de líneas (flutter test --coverage)
+
+lib/dominio/analitica.dart                             62/  62  100.0%
+lib/dominio/comercio.dart                              36/  36  100.0%
+lib/dominio/contexto.dart                              53/  56   94.6%
+lib/dominio/dinero.dart                                11/  11  100.0%
+lib/dominio/eventos.dart                               21/  22   95.5%
+lib/dominio/excepciones.dart                           23/  35   65.7%
+lib/dominio/lealtad.dart                               41/  41  100.0%
+lib/dominio/mensajeria.dart                            41/  41  100.0%
+lib/dominio/mini_app.dart                              10/  11   90.9%
+lib/dominio/monedero.dart                              53/  54   98.1%
+lib/dominio/notificaciones.dart                        30/  30  100.0%
+lib/dominio/plataforma.dart                            34/  34  100.0%
+lib/dominio/sugerencias.dart                           14/  14  100.0%
+lib/dominio/transporte.dart                            55/  55  100.0%
+lib/presentacion/vm/chat_vm.dart                       22/  26   84.6%
+lib/presentacion/vm/inicio_vm.dart                     24/  25   96.0%
+lib/presentacion/vm/metricas_vm.dart                   28/  29   96.6%
+lib/presentacion/vm/monedero_vm.dart                   15/  16   93.8%
+lib/presentacion/vm/tienda_vm.dart                     36/  36  100.0%
+lib/presentacion/vm/viajes_vm.dart                     25/  26   96.2%
+
+TOTAL 634/660  96.1%

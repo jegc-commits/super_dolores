@@ -1,0 +1,45 @@
+Flutter 3.47.6 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 5fc346839b (hace 7 semanas) • 2026-09-30 15:02:49 -0700
+Engine • hash b8c8d3d8d5d0095127057f8a29ca8cc53da2167c (revision 692136cb65) (1 months ago) • 2026-09-30 00:56:59.000Z
+Tools • Dart 3.13.5 • DevTools 2.60.0
+[✓] Flutter (Channel stable, 3.47.6, on Linux Mint 22.3 7.0.0-38-generic, locale es_MX.UTF-8) [55ms]
+    • Flutter version 3.47.6 on channel stable at /home/tahg/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 5fc346839b (hace 7 semanas), 2026-09-30 15:02:49 -0700
+    • Engine revision 692136cb65
+    • Dart version 3.13.5
+    • DevTools version 2.60.0
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, enable-record-use, enable-swift-package-manager, omit-legacy-version-file, enable-lldb-debugging, enable-uiscene-migration
+
+[✗] Android toolchain - develop for Android devices [55ms]
+    • Android SDK at /usr/lib/android-sdk
+    • Emulator version unknown
+    ✗ cmdline-tools component is missing.
+      Try installing or updating Android Studio.
+      Alternatively, download the tools from https://developer.android.com/studio#command-line-tools-only and make sure to set the ANDROID_HOME environment variable.
+      See https://developer.android.com/studio/command-line for more details.
+
+[✗] Chrome - develop for the web (Cannot find Chrome executable at google-chrome) [16ms]
+    ! Cannot find Chrome. Try setting CHROME_EXECUTABLE to a Chrome executable.
+
+[✓] Linux toolchain - develop for Linux desktop [796ms]
+    • Ubuntu clang version 18.1.3 (1ubuntu1)
+    • cmake version 3.28.3
+    • ninja version 1.11.1
+    • pkg-config version 1.8.1
+    • OpenGL core renderer: Mesa Intel(R) Graphics (ADL-N) (X11)
+    • OpenGL core version: 4.6 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.4 (X11)
+    • OpenGL core shading language version: 4.60 (X11)
+    • OpenGL ES renderer: Mesa Intel(R) Graphics (ADL-N) (X11)
+    • OpenGL ES version: OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.4 (X11)
+    • OpenGL ES shading language version: OpenGL ES GLSL ES 3.20 (X11)
+    • GL_EXT_framebuffer_blit: yes (X11)
+    • GL_EXT_texture_format_BGRA8888: yes (X11)
+
+[✓] Connected device (1 available) [423ms]
+    • Linux (desktop) • linux • linux-x64 • Linux Mint 22.3 7.0.0-38-generic
+
+[✓] Network resources [483ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 2 categories.

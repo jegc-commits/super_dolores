@@ -1,0 +1,115 @@
+Resolving dependencies...
+Downloading packages...
+  flutter_lints 4.0.0 (6.0.0 available)
+  lints 4.0.0 (6.1.0 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  test_api 0.7.12 (0.7.15 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart
+00:00 +0: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: InicioViewModel muestra saldo, puntos, nivel y no leídos
+00:00 +1: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: InicioViewModel la sugerencia cambia cuando el usuario ya usó el servicio
+00:00 +2: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: InicioViewModel cambiar de usuario avisa a la pantalla
+00:00 +3: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: InicioViewModel canjearTodo convierte los puntos canjeables en saldo
+00:00 +4: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: InicioViewModel el kill switch quita la mini-app de la lista
+00:00 +5: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MonederoViewModel enviar dinero funciona y avisa para refrescar el inicio
+00:00 +6: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MonederoViewModel un error del negocio se muestra con su mensaje claro
+00:00 +7: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MonederoViewModel un error inesperado no revela detalles
+00:00 +8: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: ChatViewModel abrir marca como leídos y enviar agrega el mensaje
+00:00 +9: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: ChatViewModel mensaje vacío muestra aviso y no se envía
+00:00 +10: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: ChatViewModel enviar dinero desde el chat
+00:00 +11: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: TiendaViewModel arma el carrito, calcula el total y compra
+00:00 +12: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: TiendaViewModel quitar cantidades elimina la línea
+00:00 +13: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: TiendaViewModel sin saldo: error claro y el carrito se conserva
+00:00 +14: /home/tahg/Documentos/GitHub/super_dolores/test/retencion_test.dart: Lealtad: puntos por gasto 1 punto por cada $10 en compras y viajes
+00:00 +15: /home/tahg/Documentos/GitHub/super_dolores/test/retencion_test.dart: Lealtad: puntos por gasto 1 punto por cada $10 en compras y viajes
+00:00 +16: /home/tahg/Documentos/GitHub/super_dolores/test/retencion_test.dart: Lealtad: puntos por gasto 1 punto por cada $10 en compras y viajes
+00:00 +17: /home/tahg/Documentos/GitHub/super_dolores/test/retencion_test.dart: Lealtad: puntos por gasto 1 punto por cada $10 en compras y viajes
+00:00 +18: /home/tahg/Documentos/GitHub/super_dolores/test/retencion_test.dart: Lealtad: puntos por gasto 1 punto por cada $10 en compras y viajes
+00:00 +19: /home/tahg/Documentos/GitHub/super_dolores/test/retencion_test.dart: Lealtad: puntos por gasto 1 punto por cada $10 en compras y viajes
+00:00 +20: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +21: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +22: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +23: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +24: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +25: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +26: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +27: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +28: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +29: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +30: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +31: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +32: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +33: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +34: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +35: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +36: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +37: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +38: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +39: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +40: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +41: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +42: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +43: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +44: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +45: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +46: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +47: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +48: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +49: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +50: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +51: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +52: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +53: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +54: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +55: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +56: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +57: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +58: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +59: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +60: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +61: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +62: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +63: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +64: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +65: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +66: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +67: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +68: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +69: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +70: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +71: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +72: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +73: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +74: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +75: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +76: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +77: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +78: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +79: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +80: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +81: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +82: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +83: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +84: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +85: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +86: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +87: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +88: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +89: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +90: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +91: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +92: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +93: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:00 +94: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:01 +95: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:01 +96: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:01 +97: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:01 +98: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:01 +99: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:01 +100: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:01 +101: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) es reproducible: misma semilla, mismos números
+00:02 +102: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) coherencia: DAU ≤ WAU ≤ MAU y las tasas están entre 0 y 1
+00:03 +103: /home/tahg/Documentos/GitHub/super_dolores/test/vms_test.dart: MetricasViewModel (datos sintéticos con semilla) la retención baja con los días: D1 ≥ D7 (los usuarios se van yendo)
+00:05 +104: All tests passed!
